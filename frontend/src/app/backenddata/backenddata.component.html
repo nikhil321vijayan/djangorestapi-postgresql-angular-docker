@@ -1,0 +1,27 @@
+
+<div class="container" >
+  <div class="row">
+    <div class="col"></div>
+    <div class="col text-center">
+      <textarea class="form-control" type="text" rows="7" name="inputText" [(ngModel)]="inputText"></textarea>
+      <hr/>
+      <button (click)="getBackendData()" class="btn btn-primary">Get Welcome Message</button>
+      <hr/>
+      <textarea class="form-control" type="text" rows="7" disabled>{{backendMessage}}</textarea>
+    </div>
+
+    <div class="col"></div>
+
+
+  </div>
+
+
+  <h2>{{inputText}}</h2>
+
+</div>
+
+
+
+<div class="container" *ngIf>
+  <h2>Data from backend says {{backendMessage}}</h2>
+</div>
